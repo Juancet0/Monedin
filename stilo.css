@@ -1,0 +1,38 @@
+/*body{
+    background-color: #E9FA98;
+}*/
+.body_moneda{
+    background-color: #f3e1b4;
+}
+.moneda{
+    display: inline-flex;
+    width: 30%;
+    height: 340px;
+    padding-top: 3%;
+    align-items:self-start ;
+    justify-content: center;
+    border-radius: 27px;
+    /*border: 2px solid black;*/
+    box-shadow: 0px 0px 8px ;
+}
+.img_moneda{
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 100%;
+    background-color: #8d4405;
+    border: 1px solid #3c1e04;
+}
+.info_moneda{
+    background-color: rgb(187, 194, 200);
+}
+.links{
+    text-align: center;
+    margin-top: 18%;
+}
+.link_tabla{
+    text-decoration: none; 
+    color: inherit;
+    border: solid 2px rgb(9, 214, 74);
+}
