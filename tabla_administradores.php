@@ -33,8 +33,8 @@ if ($resul){
         echo '<td>'.$fila['correo'].'</td>';
         echo '<td>'.$fila['contraseña'].'</td>';
         echo '<td>'.$fila['nombre_tu'].'</td>';
-        echo '<td><a href="listau_modificar.php?codi=' . $fila['id_usuario']. '"> Modificar </a></td>';
-        echo '<td><a href="listau_eliminar.php?codi='.$fila['id_usuario'].'"> Eliminar </a></td>';
+        echo '<td><a href="tadmin_modificar.php?codi=' . $fila['id_usuario']. '"> Modificar </a></td>';
+        echo '<td><a href="tadmin_eliminar.php?codig=' .  $fila['id_usuario'].'"> Eliminar  </a></td>';
         echo '</tr>';
     }
 }
@@ -42,6 +42,10 @@ mysqli_close($conectar);
 ?>
     </tbody>
     </table>
-    <a href="#">Añadir Administrador</a>
+    <a href="tadmin_añadir.php">Añadir Administrador</a>
+    <br>
+    <p>
+    <a href="lista.php">Regresar</a>
+
 </body>
 </html>

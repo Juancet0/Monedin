@@ -1,5 +1,5 @@
     const nombre = document.getElementById(nombre);
-    const correo = document.getElementById(pass);
+    const correo = document.getElementById(email);
     const form = document.getElementById(form);
     const parrafo = document.getElementById(warning);
 
@@ -13,10 +13,6 @@
         }
         if(!regexEmail.test(email.value)){
             warning += 'el email no es valido<br>'
-            entrar = true
-        }
-        if(pass.value.lenght < 8){
-            warning += 'La contraseña no es valida<br>'
             entrar = true
         }
 

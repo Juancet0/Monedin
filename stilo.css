@@ -36,3 +36,43 @@
     color: inherit;
     border: solid 2px rgb(9, 214, 74);
 }
+.body_form{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito";
+    text-align: center;
+    background: linear-gradient(to right, #000000 40%, #030428 60%);
+    
+}
+.contenedor_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    height: 60vh;
+}
+.formulario_mod{
+    width: 30%;
+    height: fit-content;
+    box-shadow: 0px 0px 8px 2px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.label_form{
+    padding: 7px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #1006a1;
+}
+.input_form{
+    padding: 5px;
+    border-radius: 10px;
+    border: transparent;
+}
+.h1_modificar{
+    color: #ffffff;
+}
