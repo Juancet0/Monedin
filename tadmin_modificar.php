@@ -9,9 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Modificar moneda</title>
 </head>
-
-<body class="body_form">
 <h1 class="h1_modificar">Modificar Usuarios</h1><br>
+<body class="body_form">
 <?php
     include 'conexion.php';
     $codi=$_GET['codi'];
@@ -21,28 +20,26 @@
 ?> 
 <div class="contenedor_form">
 <form action="tadmin_actualizar.php" method="post" class="formulario_mod">
+
     <br>   
     <input type= "hidden" class="input_form" name="txtid"  value= "<?php echo $codi; ?>"/>
     <br>  
-        <label for="txtnom" class="label_form">Nombre: </label><br><br>
-        <input type="text" class="input_form" name="txtnom" id="nombre" pattern="[a-zA-Z]+" tittle="Ingrese solo Letras" placeholder="Ingresar el nombre" value="<?php echo $fila ['nombre_usuario']; ?>"  />
-        <br><br>
-        <p> 
-        <label for="txtcorreo" class="label_form">Correo: </label><br><br>
-        <input type="email" class="input_form" name="txtcorreo" id="email" pattern=".+(?!mail)\.com" placeholder="a@gmail.com" value="<?php echo $fila ['correo']; ?>" />
-          <p>
+        <input type="text" class="input_form" name="txtnom" id="nombre" pattern="[a-zA-Z]+" tittle="Ingrese solo Letras" placeholder="Nombre" value="<?php echo $fila ['nombre_usuario']; ?>" required  />
+        <br>
+        <br>
+        <br>
+        <input type="email" class="input_form" name="txtcorreo" id="email" pattern=".+(?!mail)\.com" placeholder="Correo" value="<?php echo $fila ['correo']; ?>" required />
+        <br>
+        <br>
         <br> 
-        <label for="txtcon" class="label_form">Contraseña: </label><br><br>
-        <input type="password" class="input_form" name="txtcon" placeholder="Ingresar una contra" value="<?php echo $fila ['contraseña']; ?>" />
+        <input type="password" class="input_form" name="txtcon" placeholder="Contraseña" value="<?php echo $fila ['contraseña']; ?>" required />
    <br>    
-   <p>
     <input type="hidden" name="txttipo" value="<?php echo $fila ['id_tusuario']?>">
    <br>
    <button type="submit" class="button">Actualizar</button>
 <button type="reset" class="button">Cancelar</button> <br><br>
 </form>
 </div>
-<p>
 <a href="tabla_administradores.php" >Volver</a><br><br>
 </body>
 </html>

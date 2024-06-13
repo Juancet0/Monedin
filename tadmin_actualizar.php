@@ -1,6 +1,7 @@
 <?php
 
 include "conexion.php";
+include "main.js";
 
 $id = $_POST['txtid'];
 $tipo = $_POST['txttipo'];

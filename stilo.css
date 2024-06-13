@@ -1,8 +1,17 @@
 /*body{
     background-color: #E9FA98;
 }*/
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .body_moneda{
     background-color: #f3e1b4;
+}
+:root{
+    --colorTextos:#49454567;
 }
 .moneda{
     display: inline-flex;
@@ -42,7 +51,8 @@
     padding: 0;
     font-family: "Nunito";
     text-align: center;
-    background: linear-gradient(to right, #000000 40%, #030428 60%);
+    background: linear-gradient(to bottom, #ff9966 , #ff5e62 );
+    background-attachment: fixed;
     
 }
 .contenedor_form{
@@ -55,24 +65,66 @@
     height: 60vh;
 }
 .formulario_mod{
-    width: 30%;
-    height: fit-content;
-    box-shadow: 0px 0px 8px 2px;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid white;
-}
-.label_form{
-    padding: 7px;
+    width: 24%;
+    height: 120%;
+    background-color: white;
     border-radius: 15px;
-    color: rgb(255, 255, 255);
-    background-color: #1006a1;
-}
+    border: 2px solid white;
+} 
 .input_form{
-    padding: 5px;
-    border-radius: 10px;
-    border: transparent;
+    display: flex;
+    appearance: none;
+    padding: 8px;
+    margin: 8px 0 0 15px;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+    
 }
+.input_form:focus{
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+/*.input_form:hover{
+    transform: scale(1.1);
+}*/
 .h1_modificar{
     color: #ffffff;
+}
+button{
+    background-color: transparent;
+    color: #000000;
+    border: transparent;
+    font-size: large;
+    font-weight: bolder;
+
+    transition: transform 0.3s ease;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.body-tabla-admin{
+    display: flex;
+    background: linear-gradient(to bottom, #ff9966 , #ff5e62 );
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+b{
+    font-family: "Varela Round";
+    margin-top: 38px;
+    margin-bottom: 18px;
+}
+.lista{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Varela Round";
+    background-color: white;
+    border-radius: 10px;
+}
+table{
+    border-spacing: 15px;
 }

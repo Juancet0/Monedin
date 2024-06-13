@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Tabla Administradores</title>
 </head>
-<body>
+<body class="body-tabla-admin">
     <b>Administradores</b>
     <div class="lista">
-    <table border="2">
+    <table>
         <thead>
         <tr>
             <td>Nombre</td>
@@ -29,12 +33,12 @@ $resul = mysqli_num_rows($datos);
 if ($resul){
     while ($fila = mysqli_fetch_assoc($datos)){
         echo '<tr>';
-        echo '<td>'.$fila['nombre_usuario'].'</td>';
-        echo '<td>'.$fila['correo'].'</td>';
-        echo '<td>'.$fila['contraseña'].'</td>';
-        echo '<td>'.$fila['nombre_tu'].'</td>';
-        echo '<td><a href="tadmin_modificar.php?codi=' . $fila['id_usuario']. '"> Modificar </a></td>';
-        echo '<td><a href="tadmin_eliminar.php?codig=' .  $fila['id_usuario'].'"> Eliminar  </a></td>';
+        echo '<td class="celda">'.$fila['nombre_usuario'].'</td>';
+        echo '<td class="celda">'.$fila['correo'].'</td>';
+        echo '<td class="celda">'.$fila['contraseña'].'</td>';
+        echo '<td class="celda">'.$fila['nombre_tu'].'</td>';
+        echo '<td class="celda"><a href="tadmin_modificar.php?codi=' . $fila['id_usuario']. '"> Modificar </a></td>';
+        echo '<td class="celda"><a href="tadmin_eliminar.php?codig=' .  $fila['id_usuario'].'"> Eliminar  </a></td>';
         echo '</tr>';
     }
 }

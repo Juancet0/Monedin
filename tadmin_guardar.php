@@ -6,6 +6,7 @@ $correo = $_POST['txtcorreo'];
 $con = $_POST['txtcon'];
 
 include "conexion.php";
+include "main.js";
 $sql="select * from usuario where id_usuario= $id";
 $res= mysqli_query ($conectar, $sql); 
 $nro_reg = mysqli_num_rows($res);

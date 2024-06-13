@@ -9,7 +9,7 @@
 <body>
 <div class="contenedor">
     <div class="Sesion">
-<form action="tadmin_guardar.php" method="post">
+<form action="tadmin_guardar.php" method="post" class="formulario_añadir">
     
     <h1>Añadir Admin</h1><p> 
 
