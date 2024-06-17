@@ -19,8 +19,7 @@
     $fila =  mysqli_fetch_array($data);
 ?> 
 <div class="contenedor_form">
-<form action="tadmin_actualizar.php" method="post" class="formulario_mod">
-
+<form action="tadmin_actualizar.php" method="post" class="formulario">
     <br>   
     <input type= "hidden" class="input_form" name="txtid"  value= "<?php echo $codi; ?>"/>
     <br>  
@@ -38,6 +37,7 @@
    <br>
    <button type="submit" class="button">Actualizar</button>
 <button type="reset" class="button">Cancelar</button> <br><br>
+<a href="tabla_administradores.php" class="button">Volver</a>
 </form>
 </div>
 <a href="tabla_administradores.php" >Volver</a><br><br>

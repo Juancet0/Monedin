@@ -46,7 +46,7 @@
     border: solid 2px rgb(9, 214, 74);
 }
 .body_form{
-    height: 100%;
+    height: 80%;
     margin: 0;
     padding: 0;
     font-family: "Nunito";
@@ -63,8 +63,9 @@
     background-position: center;
     backdrop-filter: blur(10px);
     height: 60vh;
+    margin-top: 4%;
 }
-.formulario_mod{
+.formulario{
     width: 24%;
     height: 120%;
     background-color: white;
